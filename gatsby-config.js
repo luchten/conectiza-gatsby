@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: "/conectiza-gatsby",
   /* Your site config here */
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [],
 }

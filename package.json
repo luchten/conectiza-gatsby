@@ -12,8 +12,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
