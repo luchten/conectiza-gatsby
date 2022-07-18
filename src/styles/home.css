@@ -1,0 +1,423 @@
+.header {
+    padding-top: 100px !important;
+    z-index: 1;
+    position: relative;  
+    background-image: url(/images/header-background.png);
+    background-size: cover;
+    background-position: center;  
+  }
+  
+  .header::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35vw;
+    height: 55%;
+    background-image: url(/images/header-pattern-1.svg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .header::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 33vw;
+    height: 55%;
+    background-image: url(/images/header-pattern-2.svg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main-menu-div {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.25s;  
+  }
+
+  .conectiza-banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .conectiza-banner img {
+    min-width: 350px;
+  }
+  
+  .conectiza-title {
+    color: white;
+  }
+  
+  .conectiza-title h1 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  
+  .conectiza-title h2 {
+    font-size: 40px;
+    font-weight: 400;    
+  }
+  
+  .conectiza-title p {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 100px;
+  }
+  
+  .my-button {
+    background: linear-gradient(93.66deg, #AC424E 7.12%, #ED6D1D 98.32%);
+    border-radius: 25px;
+    padding: 13px 45px;
+    color: white;
+    border: none;    
+    transition: 0.5s;
+  }
+  
+  .my-button:hover {
+    filter: brightness(80%);
+  }
+  
+  .down-arrow {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  #section-solucoes {
+    padding-top: 75px;
+  }
+  
+  h1.solucoes {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 115px;
+  }
+  
+  .solucao-card {
+    border-radius: 20px;
+    padding: 10px 0;
+    transition: 0.5s;
+  }
+  
+  .solucao-card:hover {
+    box-shadow: 1px 1px 50px rgb(230, 230, 230);
+  }
+  
+  .solucao-card h1 {
+    font-weight: 700;
+    font-size: 28px; 
+    margin: 25px 0;   
+  }
+  
+  .solucao-card p {
+    font-size: 16px;
+    color: #808080;
+    padding: 0 30px;
+  }
+  
+  .solicitar {
+    display: flex;
+    align-items: center;    
+    margin: 100px 0;
+    padding: 50px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 25px;
+  }
+  
+  .solicitar h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .solicitar p {
+    font-size: 20px;
+    font-weight: 500;   
+  }
+  
+  .solicitar button:hover {
+    filter: brightness(80%);
+  }
+  
+  .solicitar button {
+    background: linear-gradient(93.66deg, #E8481D 7.12%, #ED6D1D 98.32%);
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;    
+    padding: 25px 45px;
+    margin-left: 100px; 
+    white-space: nowrap;    
+    transition: 0.5s;
+  }
+  
+  .vtex {
+    background: linear-gradient(92.74deg, #2B8836 0.26%, #7ABA48 101.3%, rgba(217, 217, 217, 0) 101.31%);
+    position: relative;
+    padding: 100px 0;  
+  }
+  
+  .vtex::before {
+    content: '';
+    position: absolute;
+    background-image: url(/images/vtex-pattern-1.svg);
+    bottom: 0;
+    left: 0;
+    width: 27vw;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .vtex::after {
+    content: '';
+    position: absolute;
+    background-image: url(/images/vtex-pattern-2.svg);
+    background-size: cover;
+    background-position: center;
+    width: 27vw;
+    height: 90%;
+    top: 0;
+    right: 0;
+  }
+  
+  .vtex h1 {
+    font-size: 28px;
+    color: white;
+    margin: 50px 0;    
+  }
+  
+  .vtex button {
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    padding: 35px 60px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    transition: 0.25s;    
+  }
+  
+  .headless h1 {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  
+  .headless p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .headless-card {
+    padding: 30px;
+    background: #F2F2F2;
+    border-radius: 25px;
+  }
+  
+  .headless-card p {
+    line-height: 1.25;
+    font-weight: 600;
+  }
+  
+  .headless-card img {
+    margin-bottom: 20px;
+  }
+  
+  .headless-info p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25    
+  }
+  
+  .marcas {
+    transition: 0.5s;
+  }
+  
+  .marcas:hover {
+    transform: scale(1.2);
+  }
+  
+  .contato {
+    padding: 100px 0;
+  }
+  
+  .contato-title h1 {
+    font-size: 64px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .contato-title {
+    margin-bottom: 50px;
+  }
+  
+  .contato-title p {
+    font-size: 36px;
+    color: white;    
+  }
+  
+  .contato-title h1 span {
+    color: #FF5122;
+  }
+  
+  .contato-input input {
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 20px;   
+    color: white;   
+  }
+  
+  .contato-input input::placeholder {
+    color: white;
+  }
+  
+  .contato-input button {
+    color: #E8481D;
+    font-size: 20px;
+    float: right;
+    border: none;
+    padding: 25px 100px;
+    font-weight: 700;
+    margin-top: 30px;
+    transition: 0.5s;
+  }
+  
+  .contato-input button:hover {
+    filter: brightness(80%);
+  }
+  
+  .contato {
+    background-color: #E8481D;
+  }
+  
+  #nome {
+    width: 100%;
+  }
+  
+  #email {
+    margin-right: 30px;
+    min-width: 60%;
+  }
+  
+  #tel {
+    width: 100%;   
+  }
+  
+  #mensagem {
+    width: 100%; 
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+  }
+  
+  #mensagem::placeholder {
+    color: white;
+  }
+  
+  .email-tel {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  .contato-info div {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  
+  .contato-info h1 {
+    font-size: 32px;
+    color: white;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 420px) {
+    .contato-info h1 {        
+        font-size: 22px !important;
+    }
+  
+    .conectiza-title h1 {
+        font-size: 50px;
+    }
+  
+    .conectiza-title h2 {
+        font-size: 30px;
+    }
+  
+    .conectiza-title p {
+        padding-right: 50px;
+        font-size: 16px;
+    }
+  
+    .headless h1 {
+        font-size: 50px;
+    }
+  
+    .headless p {
+        font-size: 16px;
+    }
+  
+    .contato-title h1 {
+        font-size: 50px;
+    }
+  
+    .contato-title p {
+        font-size: 25px;        
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contato-info h1 {
+        font-size: 27px;
+    }
+  
+    .email-tel {
+        flex-wrap: wrap;
+    }
+  
+    #email {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+  
+    .vtex button {
+        font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .solicitar {
+        flex-direction: column;        
+        padding: 50px 25px;
+    }
+  
+    .solicitar button {
+        margin-left: 0;
+    }
+  
+    .solicitar div {
+        text-align: center;
+    }
+  
+    .solicitar p {
+        margin: 30px 0;
+    }    
+  }
+
+  @media (max-width: 992px) {
+    .conectiza-banner {
+        display: none;
+    }    
+  }

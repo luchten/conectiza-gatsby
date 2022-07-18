@@ -1,0 +1,27 @@
+.footer-card-item h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  .footer-card-item a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+    color: black !important;
+    transition: 0.5s;    
+  }
+  
+  .footer-card-item a:hover {
+    text-shadow: 1px 1px 2px rgb(100, 100, 100);
+  }
+  
+  footer {
+    padding: 30px 0;
+    border-top: 1px solid rgb(230, 230, 230);
+  }
+  
+  footer h6 {
+    font-size: 20px;
+    font-weight: 500;
+  }
