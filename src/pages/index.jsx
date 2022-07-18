@@ -29,13 +29,13 @@ export default function Home() {
             </div>
             <div className="col-lg-6 mt-5">
               <div className='conectiza-banner'>
-                <img className="img-fluid" src="images/conectiza-banner.svg" alt="banner conectiza"></img>
+                <img className="img-fluid" src="/images/conectiza-banner.svg" alt="banner conectiza"></img>
               </div>
             </div>
           </div>
         </div>
         <div className='down-arrow'>
-          <a href="#section-solucoes"><img src="images/header-arrow.svg" alt=""></img></a>
+          <a href="#section-solucoes"><img src="/images/header-arrow.svg" alt=""></img></a>
         </div>
       </section>
 
