@@ -17,7 +17,7 @@ export default function MainMenu() {
             <div className="row mx-2 mx-sm-0">
                 <div className="col">
                     <div className='main-menu'>
-                        <Link to='/'><img src='' alt="logotipo conectiza"></img></Link>
+                        <Link to='/'><img src='' alt="logotipoo conectiza"></img></Link>
                         <ul className={menuState == 'down' ? 'menu-links menu-links-show' : 'menu-links'}>
                             <li><Link to="/sobre">agência</Link></li>
                             <li><Link to="#">soluções</Link></li>
