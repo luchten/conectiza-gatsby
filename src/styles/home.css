@@ -15,7 +15,7 @@
     left: 0;
     width: 35vw;
     height: 55%;
-    background-image: url(/images/header-pattern-1.svg);
+    background-image: url(/conectiza-gatsby/images/header-pattern-1.svg);
     background-size: cover;
     background-position: center;
   }
@@ -28,7 +28,7 @@
     right: 0;
     width: 33vw;
     height: 55%;
-    background-image: url(/images/header-pattern-2.svg);
+    background-image: url(/conectiza-gatsby/images/header-pattern-2.svg);
     background-position: center;
     background-size: cover;
   }
@@ -190,7 +190,7 @@
   .vtex::before {
     content: '';
     position: absolute;
-    background-image: url(/images/vtex-pattern-1.svg);
+    background-image: url(/conectiza-gatsby/images/vtex-pattern-1.svg);
     bottom: 0;
     left: 0;
     width: 27vw;
@@ -202,7 +202,7 @@
   .vtex::after {
     content: '';
     position: absolute;
-    background-image: url(/images/vtex-pattern-2.svg);
+    background-image: url(/conectiza-gatsby/images/vtex-pattern-2.svg);
     background-size: cover;
     background-position: center;
     width: 27vw;
