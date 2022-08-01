@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import MainMenu from '../components/MainMenu';
 import '../styles/home.css';
 import solucaoCardInfo from '../script/solucaoCard';
@@ -7,35 +7,44 @@ import marcasInfo from '../script/marcas';
 import { createSolucaoCard, createHeadlessCard, createMarcas } from '../script/createFunctions';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../components/Footer";
+import VtexSection from "../components/VtexSection";
 
 export default function Home() {
+  const [mainMenuState, setMainMenuState] = useState('up');
+  const mainMenuFunc = () => {
+    if (window.scrollY > 0) {
+      setMainMenuState('down');
+    } else {
+      setMainMenuState('up');
+    }
+  }
+
   return (
-    <div>      
+    <div onWheel={mainMenuFunc}>
       <section className='header'>
-        <div className='main-menu-div'>
+        <div className={mainMenuState == 'up' ? 'main-menu-div' : 'main-menu-div main-menu-down'}>
           <MainMenu />
         </div>
         <div className="container-lg">
           <div className="row mx-2 mx-sm-0 justify-content-center align-items-center">
-            <div className="col-lg-6 mt-5">
+            <div className="col-lg-7 mt-5">
               <div className='conectiza-title'>
-                <h1>Construímos ideias digitais poderosas</h1>
-                <h2>Soluções para o</h2>
-                <h2>crescimento digital</h2>
+                <h1>Tenha sua loja pronta e vendendo em 15 dias</h1>
+                <h2>Conheça nossa solução de loja rápida</h2>
                 <p>Desenvolvemos soluções para empresas que buscam crescimento digital, seja institucional ou
                   ecommerce</p>
                 <button className='my-button'>Veja mais</button>
               </div>
             </div>
-            <div className="col-lg-6 mt-5">
+            <div className="col-lg-5 mt-5">
               <div className='conectiza-banner'>
-                <img className="img-fluid" src="/images/conectiza-banner.svg" alt="banner conectiza"></img>
+                <img className="img-fluid" src="images/loja-banner.svg" alt="banner loja"></img>
               </div>
             </div>
           </div>
         </div>
         <div className='down-arrow'>
-          <a href="#section-solucoes"><img src="/images/header-arrow.svg" alt=""></img></a>
+          <a href="#section-solucoes"><img src="images/header-arrow.svg" alt=""></img></a>
         </div>
       </section>
 
@@ -47,6 +56,20 @@ export default function Home() {
         </div>
         <div className="row justify-content-center text-center">
           {solucaoCardInfo.map(createSolucaoCard)}
+        </div>
+        <div className="row mt-5 mx-2 mx-sm-0 justify-content-center align-items-center">
+          <div className="mt-5 col-lg-6">
+            <img src="images/conectiza-banner.svg" alt="" />
+          </div>
+          <div className="mt-5 col-lg-6">
+            <div className="conectiza-subtitle">
+              <h1>Construímos ideias digitais poderosas</h1>
+              <h2>Soluções para o crescimento digital</h2>
+              <p>Desenvolvemos soluções para empresas que buscam crescimento digital, seja institucional ou
+                ecommerce</p>
+                <button className='my-button'>Veja mais</button>
+            </div>
+          </div>
         </div>
         <div className="row">
           <div className="col">
@@ -61,17 +84,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className='vtex'>
-        <div className="container-lg">
-          <div className="row text-center justify-content-center">
-            <div className="col-md-7">
-              <img src="images/vtex-icon.svg" alt="ícone vtex"></img>
-              <h1>Somos especializados em desenvolvimento e implementação em VTEX IO.</h1>
-              <button>SUA LOJA PRONTA EM 7 DIAS</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <VtexSection />
 
       <div className="container-lg">
         <div className="row my-5 mx-3 align-items-center justify-content-center">

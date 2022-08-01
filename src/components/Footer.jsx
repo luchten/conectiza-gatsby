@@ -5,13 +5,14 @@ import '../styles/footer.css';
 export default function Footer() {
     return (
         <div className="container-lg mt-5">
-            <div className="row mx-2">
-                <div className="col">
-                    <Link to='/'><img src='images/conectiza-logo-2.svg' alt="logotipo conectiza"></img></Link>
+            <div className="row mt-5 mx-2 gx-5">
+                <div className="col-lg-3 col-md-12 mb-4">
+                    <div className="footer-title">
+                        <Link to='/'><img src='images/conectiza-logo-2.svg' alt="logotipo conectiza"></img></Link>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsa, necessitatibus.</p>
+                    </div>
                 </div>
-            </div>
-            <div className="row mt-5 mx-2">
-                <div className="col-lg-3 col-md-5 mb-5">
+                <div className="col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className='footer-card-item'>
                         <h1>Loja online</h1>
                         <ul>
@@ -24,7 +25,7 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="col-lg-3 col-md-5 mb-5">
+                <div className="col-lg-3 col-md-4 col-sm-6 mb-5">
                     <div className='footer-card-item'>
                         <h1>Institucional</h1>
                         <ul>
@@ -36,7 +37,7 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="col-lg-3 col-md-12 mb-4">
+                <div className="col-lg-3 col-md-4 mb-4">
                     <div className='footer-card-item'>
                         <h1>Atendimento</h1>
                         <ul>
