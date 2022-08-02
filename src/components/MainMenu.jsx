@@ -16,10 +16,6 @@ export default function MainMenu() {
         isToggled = false;
     }
 
-    document.addEventListener('click', () => {
-        console.log(isToggled);
-    });
-
     return (
         <div className="container-lg">
             <div className="row mx-2 mx-sm-0">
