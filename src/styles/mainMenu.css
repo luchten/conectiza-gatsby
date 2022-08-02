@@ -43,9 +43,9 @@
   position: absolute;
   content: '';
   background-color: white;
-  height: 2px;
+  height: 1px;
   width: 0;
-  bottom: 10px;
+  bottom: 5px;
   left: 10%;
   transition: 0.25s;
 }
@@ -70,12 +70,24 @@
   transition: 0.25s;
 }
 
+.bar1-animate {
+  transform: rotate(45deg) translateY(14px);  
+}
+
 .bar2 {
   width: 20px;
   height: 3px;
   background-color: white;
   margin: 7px 0;
   transition: 0.25s;
+}
+
+.bar2-animate {
+  width: 0;
+}
+
+.bar3-animate {
+  transform: rotate(-45deg) translateY(-14px);  
 }
 
 @media (max-width: 920px) {

@@ -8,6 +8,7 @@ import { createSolucaoCard, createHeadlessCard, createMarcas } from '../script/c
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../components/Footer";
 import VtexSection from "../components/VtexSection";
+import 'animate.css';
 
 export default function Home() {
   const [mainMenuState, setMainMenuState] = useState('up');
@@ -44,7 +45,7 @@ export default function Home() {
           </div>
         </div>
         <div className='down-arrow'>
-          <a href="#section-solucoes"><img src="images/header-arrow.svg" alt=""></img></a>
+          <a href="#section-solucoes"><img className='animate__animated animate__bounce animate__infinite animate__slow' src="images/header-arrow.svg" alt="seta baixo"></img></a>
         </div>
       </section>
 
