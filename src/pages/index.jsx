@@ -1,3 +1,4 @@
+import 'animate.css';
 import React, { useState } from "react"
 import MainMenu from '../components/MainMenu';
 import '../styles/home.css';
@@ -8,7 +9,6 @@ import { createSolucaoCard, createHeadlessCard, createMarcas } from '../script/c
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../components/Footer";
 import VtexSection from "../components/VtexSection";
-import 'animate.css';
 
 export default function Home() {
   const [mainMenuState, setMainMenuState] = useState('up');
