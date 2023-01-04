@@ -4,42 +4,42 @@ const headlessCardInfo = [
         classes: 'col-md-6 col-xl-4',
         src: 'images/headless-icon.svg',
         alt: 'ícone headless',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae nemo iste, delectus eius natus nihil. Minima accusantium, officiis iure quas temporibus veniam mollitia ad nisi molestiae dolores veritatis nam.'
+        content: 'Criação de novas funcionalidades para sua loja sob-demanda'
     },
     {
         key: '2',
         classes: 'col-md-6 col-xl-4 mt-4 mt-md-0',
         src: 'images/headless-icon.svg',
         alt: 'ícone headless',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae nemo iste, delectus eius natus nihil. Minima accusantium, officiis iure quas temporibus veniam mollitia ad nisi molestiae dolores veritatis nam.'
+        content: 'Integrações com Google APis'
     },
     {
         key: '3',
         classes: 'col-md-6 col-xl-4 mt-md-4 mt-4 mt-xl-0',
         src: 'images/headless-icon.svg',
         alt: 'ícone headless',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae nemo iste, delectus eius natus nihil. Minima accusantium, officiis iure quas temporibus veniam mollitia ad nisi molestiae dolores veritatis nam.'
+        content: 'UI / UX'
     },
     {
         key: '4',
         classes: 'col-md-6 col-xl-4 mt-md-4 mt-4',
-        src: 'images/headless-icon.svg',
+        src: 'images/analises.svg',
         alt: 'ícone headless',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae nemo iste, delectus eius natus nihil. Minima accusantium, officiis iure quas temporibus veniam mollitia ad nisi molestiae dolores veritatis nam.'
+        content: 'Analises CRM & CRO'
     },
     {
         key: '5',
         classes: 'col-md-6 col-xl-4 mt-md-4 mt-4',
         src: 'images/headless-icon.svg',
         alt: 'ícone headless',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae nemo iste, delectus eius natus nihil. Minima accusantium, officiis iure quas temporibus veniam mollitia ad nisi molestiae dolores veritatis nam.'
+        content: 'Melhorias de funil de compra'
     },
     {
         key: '6',
         classes: 'col-md-6 col-xl-4 mt-md-4 mt-4',
         src: 'images/headless-icon.svg',
         alt: 'ícone headless',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae nemo iste, delectus eius natus nihil. Minima accusantium, officiis iure quas temporibus veniam mollitia ad nisi molestiae dolores veritatis nam.'
+        content: 'Ações em datas comemorativas'
     }
 ]
 

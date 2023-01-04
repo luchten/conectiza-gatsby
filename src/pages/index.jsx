@@ -1,27 +1,31 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react";
 import MainMenu from '../components/MainMenu';
 import '../styles/home.css';
 import solucaoCardInfo from '../script/solucaoCard';
 import headlessCardInfo from '../script/headlessCard';
-import marcasInfo from '../script/marcas';
 import { createSolucaoCard, createHeadlessCard, createMarcas } from '../script/createFunctions';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../components/Footer";
 import VtexSection from "../components/VtexSection";
 import 'animate.css';
+import Planos from '../components/Planos.jsx';
 
 export default function Home() {
   const [mainMenuState, setMainMenuState] = useState('up');
-  const mainMenuFunc = () => {
-    if (window.scrollY > 0) {
-      setMainMenuState('down');
-    } else {
-      setMainMenuState('up');
+
+  useEffect(() => {
+    const scrollHandle = () => {
+      if (window.scrollY > 0) {
+        setMainMenuState('down');
+      } else {
+        setMainMenuState('up');
+      }
     }
-  }
+    window.addEventListener('scroll', scrollHandle);
+  }, []);
 
   return (
-    <div onWheel={mainMenuFunc}>
+    <div>
       <section className='header'>
         <div className={mainMenuState == 'up' ? 'main-menu-div' : 'main-menu-div main-menu-down'}>
           <MainMenu />
@@ -55,31 +59,71 @@ export default function Home() {
             <h1 className='solucoes'><span className="dash">//</span> Soluções para comércio digital</h1>
           </div>
         </div>
-        <div className="row justify-content-center text-center">
+        <div className="row justify-content-center text-center border-bottom pb-5">
           {solucaoCardInfo.map(createSolucaoCard)}
         </div>
-        <div className="row mt-5 mx-2 mx-sm-0 justify-content-center align-items-center">
-          <div className="mt-5 col-lg-6">
-            <img src="images/conectiza-banner.svg" alt="" />
+        <div className="row mt-5 mx-2 mx-sm-0 align-items-center border-bottom pb-5">
+          <div className="my-4 col-md-5 text-center text-lg-start">
+            <img className="img-fluid" src="images/conectiza-banner1.png" alt="" />
           </div>
-          <div className="mt-5 col-lg-6">
-            <div className="conectiza-subtitle">
+          <div className="mt-5 col-md-7">
+            <div className="conectiza-subtitle text-center text-md-end">
               <h1>Construímos ideias digitais poderosas</h1>
               <h2>Soluções para o crescimento digital</h2>
               <p>Desenvolvemos soluções para empresas que buscam crescimento digital, seja institucional ou
                 ecommerce</p>
-                <button className='my-button'>Veja mais</button>
+              <button className='my-button'>Veja mais</button>
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-5 mx-2 mx-sm-0 align-items-center pb-5">
+          <div className="mt-5 col-md-7">
+            <div className="conectiza-subtitle1 text-center text-md-start">
+              <h1>Loja pronta e vendendo em apenas 15 dias</h1>
+              <h2>Nossa solução de loja rápida para quem precisa de agilidade</h2>
+              <p>Planos diferentes para diferentes necessidades</p>
+            </div>
+          </div>
+          <div className="my-4 col-md-5 text-center text-lg-end">
+            <img className="img-fluid" src="images/clock1.svg" alt="" />
+          </div>
+        </div>
+        <div className="row justify-content-center gy-4">
+          <div className="col-11 col-sm-8 col-md-6 col-lg-4 px-md-3 px-xl-4">
+            <Planos
+              title='Express'
+              text1='• Layouts pré-definidos'
+              text2='• Desenvolvimento em apenas 15 dias'
+              text3='• Domínio incluso'
+              buttonType='2'>
+            </Planos>
+          </div>
+          <div className="col-11 col-sm-8 col-md-6 col-lg-4 px-md-3 px-xl-4">
+            <Planos
+              title='Starter'
+              text1='• Funcionalidades avançadas'
+              text2='• Alterações de layout*'
+              text3='• Desenvolvimento em 15 dias*'
+              text4='• Domínio incluso'>
+            </Planos>
+          </div>
+          <div className="col-11 col-sm-8 col-md-6 col-lg-4 px-md-3 px-xl-4">
+            <Planos
+              title='Custom'
+              text1='• Layout exclusivo'
+              text2='• Loja desenvolvida sob medida para seu negócio'
+              text3='• Personalização total de conteúdo'
+              text4='• Planejamento com equipes dedicadas exclusivamente ao seu projeto'>
+            </Planos>
+          </div>
+        </div>
+        <div className="row my-5">
           <div className="col">
             <div className='solicitar'>
               <div>
                 <h1>Pronto para revolucionar seu E-commerce?</h1>
-                <p></p>
-              </div>
-              <button>Solicitar Orçamento</button>
+                <p>Somos uma equipe de arquitetura e engenharia de software focada na solução de problemas de negócios altamente complexos.</p>
+              </div>              
             </div>
           </div>
         </div>
@@ -103,23 +147,7 @@ export default function Home() {
         </div>
         <div className="row mx-0 mx-sm-2 mb-5 text-center">
           {headlessCardInfo.map(createHeadlessCard)}
-        </div>
-
-        <div className="row mx-2 mt-5">
-          <div className="col">
-            <div className='headless-info'>
-              <p>Desenvolvemos seu projeto de acordo com as suas necessidades, as implementações de plataformas de
-                e-commerce estão entre os investimentos mais discutidos em TI de varejo e, não surpreendentemente,
-                há um grande crescimento nesta área.</p>
-              <p>Planejamos e executamos tarefas nas melhores práticas de desenvolvimento, nossa responsabilidade como
-                especialistas e criadores se expressa através do desenvolvimento de soluções digitais de alto nível.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="row my-5 text-center mx-2 align-items-center">
-          {marcasInfo.map(createMarcas)}
-        </div>
+        </div>        
       </div>
 
       <section className='contato'>

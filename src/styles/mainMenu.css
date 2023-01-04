@@ -19,7 +19,7 @@
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
 }
 
 .menu-links {
@@ -32,11 +32,15 @@
 
 .menu-links a {
   display: block;
-  color: white !important;
+  color: white;
   font-size: 18px;
   margin: 0 0.5vw;
   padding: 10px;
   position: relative;
+}
+
+.menu-links a:hover {
+  color: white;
 }
 
 .menu-links a::after {
@@ -54,13 +58,32 @@
   width: 80%;
 }
 
+.menu-links-mobile {
+  padding: 50px 75px;
+  transition: 0.25s;
+  position: fixed;
+  flex-direction: column;
+  transform: translateX(100%);
+  right: 0;
+  top: 0;
+  height: 100vh;  
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
 .toggle-button {
   display: none;
   position: absolute;
-  right: 65px;
+  right: 30px;
   cursor: pointer;
   padding: 10px;
   z-index: 1;
+}
+
+.toggle-button-move {
+  right: 47px;
 }
 
 .bar1 {
@@ -71,7 +94,8 @@
 }
 
 .bar1-animate {
-  transform: rotate(45deg) translateY(14px);  
+  background-color: black;
+  transform: rotate(45deg) translateY(14px);
 }
 
 .bar2 {
@@ -83,43 +107,68 @@
 }
 
 .bar2-animate {
+  background-color: black;
   width: 0;
 }
 
 .bar3-animate {
-  transform: rotate(-45deg) translateY(-14px);  
+  background-color: black;
+  transform: rotate(-45deg) translateY(-14px);
+}
+
+.menu-card-item {
+  margin: 50px 0;
+}
+
+.menu-card-item h1 {
+  font-size: 32px;
+  font-weight: 700;  
+}
+
+.menu-card-item a {
+  font-size: 20px;
+  line-height: 2;  
+  color: black !important;
+  transition: 0.25s;    
+}
+
+.menu-card-item a:hover {
+  text-shadow: 1px 1px 2px rgb(100, 100, 100);
+}
+
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  transition: 0.25s;
+}
+
+.modal-container {
+  transition: 0.25s;
 }
 
 @media (max-width: 920px) {
   .menu-links {
-      position: fixed;
-      flex-direction: column;        
-      transform: translateX(100%);
-      right: 0;
-      top: 0;
-      height: 100vh;
-      width: 200px;
-      padding-top: 250px;
-      background: linear-gradient(102.71deg, #5E3391 24.22%, rgba(154, 90, 228, 0) 93.8%), #5128C1;        
-      align-items: center;
-      justify-content: center;
-      z-index: 1;        
+    display: none;
+  }  
+
+  .menu-links-mobile a,
+  .menu-links-mobile a:hover {
+    color: black;
   }
 
   .toggle-button {
-      display: block;
+    display: block;
   }
 
-  .menu-links-show {
-      transform: translateX(0);
-      box-shadow: -1px 0 20px;
+  .menu-links-mobile-show {
+    transform: translateX(0);
+    box-shadow: -1px 0 20px;
   }
 
   .button-fixed {
-      position: fixed;
-  }
-
-  .menu-links li {
-      margin: 20px 0;
-  }   
+    position: fixed;
+  }  
 }

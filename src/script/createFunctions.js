@@ -1,7 +1,6 @@
 import React from 'react';
 import HeadlessCard from '../components/HeadlessCard';
 import SolucaoCard from '../components/SolucaoCard';
-import Marcas from '../components/Marcas';
 
 function createHeadlessCard(card) {
   return (
@@ -28,10 +27,4 @@ function createSolucaoCard(card) {
   );
 }
 
-function createMarcas(marca) {
-  return (
-      <Marcas key={marca.key} src={marca.src} alt={marca.alt}/>    
-  );
-}
-
-export { createHeadlessCard, createSolucaoCard, createMarcas };
+export { createHeadlessCard, createSolucaoCard };

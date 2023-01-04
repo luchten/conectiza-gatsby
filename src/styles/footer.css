@@ -5,11 +5,10 @@
   }
   
   .footer-card-item a {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 20px;    
     line-height: 2;
     color: black !important;
-    transition: 0.5s;    
+    transition: 0.25s;    
   }
   
   .footer-card-item a:hover {
