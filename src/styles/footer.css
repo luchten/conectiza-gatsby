@@ -1,33 +1,83 @@
 .footer-card-item h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 25px;
-  }
-  
-  .footer-card-item a {
-    font-size: 20px;    
-    line-height: 2;
-    color: black !important;
-    transition: 0.25s;    
-  }
-  
-  .footer-card-item a:hover {
-    text-shadow: 1px 1px 2px rgb(100, 100, 100);
-  }
-  
-  footer {
-    padding: 30px 0;
-    border-top: 1px solid rgb(230, 230, 230);
-  }
-  
-  footer h6 {
-    font-size: 20px;
-    font-weight: 500;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.footer-card-item a {
+  font-size: 20px;
+  line-height: 2;
+  color: white !important;
+  transition: 0.25s;
+}
+
+.footer-card-item a:hover {
+  text-shadow: 1px 1px 2px rgb(50, 50, 50);
+}
+
+footer {
+  padding: 30px 0;  
+  color: white;
+}
+
+footer h6 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.footer-title p {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.footer {
+  padding-top: 40px;
+  background: linear-gradient(77.75deg, #ED6D1D 17.16%, #E8481D 71.68%);  
+}
+
+.por-dentro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.por-dentro input {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 20px;
+  color: white;
+  min-width: 0 !important;
+  width: 450px;
+  margin-right: 0 !important;
+}
+
+.por-dentro h1 {
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
+
+.por-dentro input::placeholder {
+  color: white;
+}
+
+.footer-wrapper {
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+@media (max-width: 993px) {
+  .por-dentro {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .footer-title p {
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1;
+  .por-dentro h1 {
+    margin-bottom: 30px;    
   }
+}
