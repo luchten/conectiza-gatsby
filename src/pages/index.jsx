@@ -123,8 +123,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-xl-5 mt-4 mt-xl-5 px-xl-3 mt-xl-0">
-            <textarea name="mensagem" id='mensagem' rows="9" placeholder="Mensagem"></textarea>
+          <div className="col-xl-5 mt-4 mt-xl-0 px-xl-3 mt-xl-0 text-center">
+            <textarea className="ajudar" name="mensagem" id='mensagem' rows="9" placeholder="Como podemos ajudar? *"></textarea>
             <button className="especialista">Falar com um especialista</button>
           </div>
         </div>

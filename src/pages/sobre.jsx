@@ -11,7 +11,7 @@ export default function Sobre() {
                     <div className="col">
                         <div className='prazer'>
                             <h1>Prazer,</h1>
-                            <h1>somos a Conectiza</h1>
+                            <h1>somos a <span className="bold">Conectiza</span></h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum dolorum repellat fuga minima exercitationem odit, quidem quaerat unde nesciunt earum dolores ducimus nobis! Impedit maxime obcaecati illo reiciendis fugit!
                                 Distinctio voluptatem, blanditiis dolor necessitatibus omnis nesciunt quo. Recusandae excepturi magnam veniam natus nesciunt necessitatibus quia. Non inventore corrupti culpa veritatis, illum dolore ipsum, tempora veniam quam, maxime iste sint?</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt repellat culpa mollitia ex vitae sit voluptatibus. Corporis nostrum recusandae quam saepe minus eos praesentium? Nulla esse consectetur nobis? Nesciunt.
@@ -20,22 +20,22 @@ export default function Sobre() {
                                 Nihil velit aut recusandae vel quibusdam quaerat voluptatum debitis accusamus facere nobis deleniti eveniet sequi hic odit corporis, magnam in quo incidunt nulla tempore explicabo sed at libero. Magnam, commodi.</p>
                         </div>
                         <div className='agencia-info'>
-                            <h1><span className='dash'>// </span>Nossa trajetória</h1>
+                            <h1>Nossa trajetória</h1>
                             <div className='agencia-div'>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum dolorum repellat fuga minima exercitationem odit, quidem quaerat unde nesciunt earum dolores ducimus nobis! Impedit maxime obcaecati illo reiciendis fugit!
                                     Distinctio voluptatem, blanditiis dolor necessitatibus omnis nesciunt quo. Recusandae excepturi magnam veniam natus nesciunt necessitatibus quia. Non inventore corrupti culpa veritatis, illum dolore ipsum, tempora veniam quam, maxime iste sint?</p>
                             </div>
-                            <h1><span className='dash'>// </span>Certificações</h1>
+                            <h1>Certificações</h1>
                             <div className='agencia-div'>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum dolorum repellat fuga minima exercitationem odit, quidem quaerat unde nesciunt earum dolores ducimus nobis! Impedit maxime obcaecati illo reiciendis fugit!
                                     Distinctio voluptatem, blanditiis dolor necessitatibus omnis nesciunt quo. Recusandae excepturi magnam veniam natus nesciunt necessitatibus quia. Non inventore corrupti culpa veritatis, illum dolore ipsum, tempora veniam quam, maxime iste sint?</p>
                             </div>
-                            <h1><span className='dash'>// </span>Consultoria e Treinamentos</h1>
+                            <h1>Consultoria e Treinamentos</h1>
                             <div className='agencia-div'>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum dolorum repellat fuga minima exercitationem odit, quidem quaerat unde nesciunt earum dolores ducimus nobis! Impedit maxime obcaecati illo reiciendis fugit!
                                     Distinctio voluptatem, blanditiis dolor necessitatibus omnis nesciunt quo. Recusandae excepturi magnam veniam natus nesciunt necessitatibus quia. Non inventore corrupti culpa veritatis, illum dolore ipsum, tempora veniam quam, maxime iste sint?</p>
                             </div>
-                            <h1><span className='dash'>// </span>Onde estamos</h1>
+                            <h1>Onde estamos</h1>
                             <div className='agencia-div'>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum dolorum repellat fuga minima exercitationem odit, quidem quaerat unde nesciunt earum dolores ducimus nobis! Impedit maxime obcaecati illo reiciendis fugit!
                                     Distinctio voluptatem, blanditiis dolor necessitatibus omnis nesciunt quo. Recusandae excepturi magnam veniam natus nesciunt necessitatibus quia. Non inventore corrupti culpa veritatis, illum dolore ipsum, tempora veniam quam, maxime iste sint?</p>

@@ -18,7 +18,7 @@ export default function MainMenu() {
             <div className={menuState === 'show' ? 'modal-show' : 'modal-container'}>
                 <div className={menuState === 'show' ? 'menu-links-mobile menu-links-mobile-show' : 'menu-links-mobile'}>
                     <div className='menu-card-item'>
-                        <h1>Loja online</h1>
+                        <h1>E-commerce</h1>
                         <ul>
                             <li><Link to='/funcionalidades'>Funcionalidades</Link></li>
                             <li><Link to='/temas'>Temas</Link></li>
@@ -55,7 +55,7 @@ export default function MainMenu() {
                             <Link to='/'><img src='/conectiza-gatsby/images/conectiza-logo.svg' alt="logotipo conectiza"></img></Link>
                             <ul className='menu-links'>
                                 <li><Link to="/sobre">sobre</Link></li>
-                                <li><Link to="#">soluções</Link></li>
+                                <li><Link to="/solucoes">soluções</Link></li>
                                 <li><Link to="#">cases</Link></li>
                                 <li><Link to="#">carreira</Link></li>
                                 <li><Link to="#">contato</Link></li>

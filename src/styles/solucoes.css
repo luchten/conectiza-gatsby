@@ -1,0 +1,32 @@
+.solucoes-title h1 {
+    font-size: 64px;
+    font-weight: 400;    
+}
+
+.solucoes-title p {
+    margin-top: 40px;
+}
+
+.solucoes-card {
+    display: flex;
+    align-items: flex-start;
+}
+
+.solucoes-card h1 {
+    font-size: 38px;
+    font-weight: bold;     
+    margin-right: 50px;
+}
+
+.solucoes-card p {
+    color: #808080;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.solucoes-card div {
+    padding: 0 45px;
+}
+
+
+

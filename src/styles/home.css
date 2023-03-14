@@ -102,7 +102,7 @@
 }
 
 .my-button {
-  background: linear-gradient(93.66deg, #AC424E 7.12%, #ED6D1D 98.32%);
+  background: linear-gradient(93.66deg, #E8481D 7.12%, #ED6D1D 98.32%);
   padding: 13px 45px;
   color: white;
   border: none;
@@ -124,22 +124,14 @@
 }
 
 h1.solucoes {
+  font-weight: 400;
   font-size: 32px;  
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .solucao-card {
-  border-radius: 20px;
   padding: 10px 0;
   transition: 0.5s;
   height: 100%;
-}
-
-.solucao-card:hover {
-  box-shadow: 1px 1px 50px rgb(230, 230, 230);  
 }
 
 .solucao-card h1 {
@@ -172,7 +164,8 @@ h1.solucoes {
 }
 
 .solicitar button:hover {
-  background-color: rgb(230, 230, 230);
+  background-color: black;
+  color: white;
 }
 
 .solicitar button {  
@@ -229,9 +222,10 @@ h1.solucoes {
 
 .vtex h1 {
   font-size: 28px;
-  color: white;
-  margin-top: 50px;
-  padding: 0 250px;
+  color: white;  
+  margin: auto;
+  margin-top: 50px;  
+  width: 650px;
 }
 
 .vtex button {
@@ -265,7 +259,7 @@ h1.solucoes {
   padding: 0 150px;  
 }
 
-.headless-card {
+.headless-card {  
   padding: 30px;
   height: 100%;
   background: #F2F2F2;
@@ -292,6 +286,7 @@ h1.solucoes {
 }
 
 .contato-title p {
+  font-weight: 400;
   font-size: 28px;
   color: black;
 }
@@ -308,21 +303,27 @@ h1.solucoes {
   color: black;
 }
 
+.ajudar {
+  padding: 20px;
+}
+
 .especialista {
   color: white;
   font-size: 20px;  
   border: none;
   padding: 25px 100px;
-  font-weight: 700;
+  font-weight: 700;  
   margin-top: 30px;
   transition: 0.5s;
   background-color: black;
   white-space: nowrap;
   width: 100%;
+  border: 1px solid black;
 }
 
-.especialista:hover {
-  background-color: rgb(54, 54, 54);
+.especialista:hover {  
+  background-color: white;
+  color: black;
 }
 
 #nome {
@@ -403,8 +404,8 @@ h1.solucoes {
 }
 
 .privacidade input {
-  width: 40px;
-  height: 40px;
+  min-width: 25px;
+  min-height: 25px;
   margin-right: 30px;
 }
 
@@ -416,7 +417,7 @@ h1.solucoes {
   background-size: cover;
   background-repeat: no-repeat;
   height: 430px;
-  background-image: url(../../static/conectiza-gatsby/images/contato-background.png);
+  background-image: url(/conectiza-gatsby/images/contato-background.png);
   background-color: black;
 }
 
@@ -494,7 +495,7 @@ h1.solucoes {
 
   .vtex button {
     font-size: 15px;
-  }
+  }    
 }
 
 @media (max-width: 768px) {
@@ -518,6 +519,10 @@ h1.solucoes {
   .conectiza-subtitle p,
   .conectiza-subtitle1 p {
     margin-left: 0;
+  }  
+
+  .vtex h1 {
+    width: auto;
   }
 }
 
@@ -538,7 +543,11 @@ h1.solucoes {
 @media (max-width: 1200px) {
   .vtex h1 {
     padding: 0 50px;
-  }  
+  }
+  
+  .especialista {
+    width: 489px;
+  }
 }
 
 @media (max-width: 1400px) {
