@@ -5,6 +5,8 @@
 
 .solucoes-title p {
     margin-top: 40px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .solucoes-card {
@@ -27,6 +29,3 @@
 .solucoes-card div {
     padding: 0 45px;
 }
-
-
-

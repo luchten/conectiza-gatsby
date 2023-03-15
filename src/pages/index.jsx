@@ -70,7 +70,7 @@ export default function Home() {
 
       <div className="container-lg pb-5">
         <Marcas></Marcas>
-        <div className="row my-5 mx-3 align-items-center justify-content-center">
+        <div className="row my-5 pt-5 mx-3 align-items-center justify-content-center">
           <div className="col">
             <div className='headless text-center'>
               <h1>Soluções para seu e-commerce</h1>

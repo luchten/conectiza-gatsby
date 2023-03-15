@@ -1,0 +1,21 @@
+.carreira-title h1 {
+    font-size: 64px;
+    font-weight: 400;    
+}
+
+.carreira-title p {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 400;    
+}
+
+.carreira-row {
+    padding: 27px;
+    border: 1px solid #CCCCCC;
+}
+
+.carreira-row p {
+    font-size: 20px;
+    color: #808080;    
+    margin: 0;
+}

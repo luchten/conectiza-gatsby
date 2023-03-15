@@ -1,0 +1,32 @@
+.gostou h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.gostou p {
+    font-size: 28px;
+    color: #808080;
+    margin: 0 100px;
+    line-height: 1.25;
+}
+
+.gostou button {
+    background: linear-gradient(93.66deg, #E8481D 7.12%, #ED6D1D 98.32%);
+    color: white;
+    padding: 30px 80px;
+    font-size: 18px;
+    border: none;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+
+.gostou button:hover {
+    filter: brightness(80%);
+}
+
+@media (max-width: 992px) {
+    .gostou p {
+        margin: 0;
+    }
+}

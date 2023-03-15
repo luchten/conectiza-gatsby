@@ -56,8 +56,8 @@ export default function MainMenu() {
                             <ul className='menu-links'>
                                 <li><Link to="/sobre">sobre</Link></li>
                                 <li><Link to="/solucoes">soluções</Link></li>
-                                <li><Link to="#">cases</Link></li>
-                                <li><Link to="#">carreira</Link></li>
+                                <li><Link to="/cases">cases</Link></li>
+                                <li><Link to="/carreira">carreira</Link></li>
                                 <li><Link to="#">contato</Link></li>
                             </ul>
                         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import PageCall from '../components/PageCall';
 import '../styles/solucoes.css';
 
 export default function Solucoes() {
@@ -60,6 +61,12 @@ export default function Solucoes() {
                         </div>
                     </div>
                 </div>
+                <PageCall 
+                    title="Gostou? Fale com nossos experts"
+                    text1="Vamos Conversar!"
+                    text2="Veja como o nosso time de suporte técnico pode contribuir para acelerar seus resultados no comércio digital e ajudar a chegar no próximo nível."
+                    button="FALE COM NOSSOS CONSULTORES"
+                />
             </div>
         </Layout>
     )

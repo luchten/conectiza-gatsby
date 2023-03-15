@@ -7,7 +7,7 @@ export default function Marcas() {
         changeMouseOverState(count);
     }    
     return (
-    <div className="row my-5 py-5 marcas text-center">
+    <div className="row my-5 pt-5 marcas text-center">
         <div className="col">
             <div className="row">
                 <div className="col">

@@ -13,7 +13,7 @@
   font-size: 20px;
   line-height: 2;
   color: white !important;
-  transition: 0.25s;
+  transition: 0.25s !important;
 }
 
 .footer-card-item a:hover {
