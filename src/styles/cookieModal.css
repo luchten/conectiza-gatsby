@@ -1,0 +1,22 @@
+.cookie-window {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    z-index: 99;
+    padding: 50px 70px;
+    font-size: 18px;
+}
+
+
+.cookie-window button {
+    padding: 20px 60px;
+    margin: 30px auto;
+    border: none;
+    background-color: white;
+}

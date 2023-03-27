@@ -8,6 +8,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../components/Footer";
 import VtexSection from "../components/VtexSection";
 import Marcas from "../components/Marcas";
+import CookieModal from "../components/CookieModal";
 
 export default function Home() {
   const [mainMenuState, setMainMenuState] = useState('up');
@@ -25,6 +26,7 @@ export default function Home() {
 
   return (
     <div>
+      <CookieModal />
       <section className='header'>
         <div className={mainMenuState === 'up' ? 'main-menu-div' : 'main-menu-div main-menu-down'}>
           <MainMenu />
